@@ -62,14 +62,11 @@ class SwissTournament:
             return pairing
 
 
-#N=3000
-#points = [random.randint(0,10) for i in range(N)]
-#playedAgainst = [set() for i in range(N)]
-N = 4
-points = [3,3,0,0]
-playedAgainst = [set() for i in range(N)]
-tour = SwissTournament(N)
-tour.addPoints(points)
-tour.addHistory(playedAgainst)
-pairs = tour.pairing()
-print(pairs)
+if __name__ == "__main__": 
+    N=1000
+    points = [random.randint(0,10) for i in range(N)]
+    tour = SwissTournament(N)
+    tour.addPoints(points)
+    tour.addHistory(playedAgainst)
+    pairs = tour.pairing()
+    print(pairs)
